@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/content_desc_event_image"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/tv_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_photo"
+        app:layout_constraintTop_toTopOf="@id/iv_photo"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Some company" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/iv_photo"
+        app:layout_constraintEnd_toEndOf="@id/tv_company"
+        app:layout_constraintStart_toStartOf="@id/tv_company"
+        app:layout_constraintTop_toBottomOf="@id/tv_company"
+        tools:text="Address 1/1" />
+
+    <TextView
+        android:id="@+id/tv_estimation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/main_msg_estimation_details"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/iv_photo" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/tv_estimation_title" />
+
+    <TextView
+        android:id="@+id/tv_est_num_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/main_msg_estimation_number"
+        app:layout_constraintEnd_toStartOf="@id/tv_revision_num_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_divider" />
+
+    <TextView
+        android:id="@+id/tv_est_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/tv_est_num_title"
+        app:layout_constraintStart_toStartOf="@id/tv_est_num_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_est_num_title"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/tv_revision_num_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/main_msg_revision_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_est_num_title"
+        app:layout_constraintTop_toBottomOf="@id/view_divider" />
+
+    <TextView
+        android:id="@+id/tv_revision_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/tv_revision_num_title"
+        app:layout_constraintStart_toStartOf="@id/tv_revision_num_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_revision_num_title"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/tv_created_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/main_msg_created"
+        app:layout_constraintEnd_toEndOf="@id/tv_est_num_title"
+        app:layout_constraintStart_toStartOf="@id/tv_est_num_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_est_num" />
+
+    <TextView
+        android:id="@+id/tv_created"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/tv_created_title"
+        app:layout_constraintStart_toStartOf="@id/tv_created_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_created_title"
+        tools:text="2000-10-10" />
+
+    <TextView
+        android:id="@+id/tv_created_by_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/main_msg_created_by"
+        app:layout_constraintEnd_toEndOf="@id/tv_revision_num_title"
+        app:layout_constraintStart_toStartOf="@id/tv_revision_num_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_revision_num" />
+
+    <TextView
+        android:id="@+id/tv_created_by"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/tv_created_by_title"
+        app:layout_constraintStart_toStartOf="@id/tv_created_by_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_created_by_title"
+        tools:text="Harry Potter" />
+
+    <TextView
+        android:id="@+id/tv_requester_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/main_msg_requester"
+        app:layout_constraintEnd_toEndOf="@id/tv_est_num_title"
+        app:layout_constraintStart_toStartOf="@id/tv_est_num_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_created" />
+
+    <TextView
+        android:id="@+id/tv_requester"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/tv_requester_title"
+        app:layout_constraintStart_toStartOf="@id/tv_requester_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_requester_title"
+        tools:text="Harry Potter" />
+
+    <TextView
+        android:id="@+id/tv_contact_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/main_msg_contact"
+        app:layout_constraintEnd_toEndOf="@id/tv_revision_num_title"
+        app:layout_constraintStart_toStartOf="@id/tv_revision_num_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_created_by" />
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/tv_contact_title"
+        app:layout_constraintStart_toStartOf="@id/tv_contact_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_contact_title"
+        tools:text="Harry Potter" />
+</androidx.constraintlayout.widget.ConstraintLayout>

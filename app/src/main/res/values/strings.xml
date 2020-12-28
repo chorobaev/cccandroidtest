@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">cccandroidtest</string>
+    <string name="main_msg_estimation_details">Est. Details</string>
+    <string name="main_msg_estimation_number">Est. Number</string>
+    <string name="main_msg_revision_number">Revision Number</string>
+    <string name="main_msg_created">Created</string>
+    <string name="main_msg_created_by">Created By</string>
+    <string name="main_msg_requester">Requester</string>
+    <string name="main_msg_contact">Contact</string>
+    <string name="content_desc_event_image">Event image</string>
+</resources>

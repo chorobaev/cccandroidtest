@@ -1,0 +1,20 @@
+{
+  "estimate": {
+    "id": "c574b0b4-bdef-4b92-a8f0-608a86ccf5ab",
+    "company": "Placebo Secondary School",
+    "address": "32 Commissioners Road East",
+    "number": 32,
+    "revision_number": 3,
+    "created_date": "2020-08-22 15:23:54",
+    "created_by": "85a57f85-a52d-4137-a0d1-62e61362f716",
+    "requested_by": "85a57f85-a52d-4137-a0d1-62e61362f716",
+    "contact": "85a57f85-a52d-4137-a0d1-62e61362f716"
+  },
+  "person": {
+    "id": "85a57f85-a52d-4137-a0d1-62e61362f716",
+    "first_name": "Joseph",
+    "last_name": "Sham",
+    "email": "joseph.sham@fake.fake",
+    "phone_number": "123-456-7890"
+  }
+}
