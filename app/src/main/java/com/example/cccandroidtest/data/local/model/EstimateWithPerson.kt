@@ -5,7 +5,7 @@ import androidx.room.Relation
 
 data class EstimateWithPerson(
     @Embedded
-    val entity: Estimate,
+    val estimate: Estimate,
     @Relation(
         parentColumn = "createdBy",
         entityColumn = "id"

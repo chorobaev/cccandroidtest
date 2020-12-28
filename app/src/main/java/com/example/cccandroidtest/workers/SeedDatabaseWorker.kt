@@ -20,7 +20,7 @@ import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.example.cccandroidtest.TestApplication
-import com.example.cccandroidtest.data.AppDatabase
+import com.example.cccandroidtest.data.local.AppDatabase
 import com.example.cccandroidtest.data.local.model.EstimatePersonWrapper
 import com.example.cccandroidtest.utils.DATA_FILENAME
 import com.example.cccandroidtest.utils.MyLogger

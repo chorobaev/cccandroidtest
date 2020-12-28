@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import com.example.cccandroidtest.data.AppDatabase
+import com.example.cccandroidtest.data.local.AppDatabase
 import com.example.cccandroidtest.data.local.dao.EstimateDao
 import com.example.cccandroidtest.data.local.dao.PersonDao
 import com.example.cccandroidtest.utils.DATABASE_NAME
